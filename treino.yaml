@@ -1,0 +1,45 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# COCO128 dataset https://www.kaggle.com/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Example usage: python train.py --data coco128.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco128  ← downloads here (7 MB)
+
+# "c:\users\bobgreen\documents\pythonscripts\python_envs\yolov5env\scripts\python.exe"  "C:\Users\BobGreen\Documents\PythonScripts\python_envs\yolov5env\Scripts\tensorboard.exe" --logdir runs\train_among
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ./  # dataset root dir
+train: construcao/train  # train images (relative to 'path') 128 images
+val: construcao/train  # val images (relative to 'path') 128 images
+test:  # test images (optional)
+
+names:
+  0: Excavator          # Escavadeira
+  1: Gloves             # Luvas
+  2: Hardhat            # Capacete
+  3: Ladder             # Escada
+  4: Mask               # Máscara
+  5: NO-Hardhat         # Sem Capacete
+  6: NO-Mask            # Sem Máscara
+  7: NO-Safety Vest     # Sem Colete de Segurança
+  8: Person             # Pessoa
+  9: SUV                # SUV
+  10: Safety Cone       # Cone de Segurança
+  11: Safety Vest       # Colete de Segurança
+  12: bus               # Ônibus
+  13: dump truck        # Caminhão basculante
+  14: fire hydrant      # Hidrante
+  15: machinery         # Máquinas
+  16: mini-van          # Van pequena
+  17: sedan             # Sedan
+  18: semi              # Caminhão semi-reboque
+  19: trailer           # Reboque
+  20: truck and trailer  # Caminhão e reboque
+  21: truck             # Caminhão
+  22: van               # Van
+  23: vehicle           # Veículo
+  24: wheel loader      # Carregadeira
+
+
+  # "c:\users\bobgreen\documents\pythonscripts\python_envs\yolov5env\scripts\python.exe"  "C:\Users\BobGreen\Documents\PythonScripts\python_envs\yolov5env\Scripts\tensorboard.exe" --logdir runs\train_among
